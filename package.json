@@ -1,0 +1,52 @@
+{
+  "name": "2022spring_fair",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format-js": "prettier --write './**/*.{js,ts,tsx}'",
+    "lint-js": "eslint --fix './**/*.{js,ts,tsx}'",
+    "fix-js": "yarn format-js && yarn lint-js",
+    "format-css": "prettier --write './src/styles/**/*.scss'",
+    "lint-css": "stylelint --fix './styles/**/*.scss'",
+    "fix-css": "yarn format-css && yarn lint-css",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-scss": "^4.1.0",
+    "typescript": "4.6.2"
+  }
+}

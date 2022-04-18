@@ -1,0 +1,6 @@
+next.config.js
+next-env.d.ts
+node_modules/
+**/out/
+**/.next/
+temp/

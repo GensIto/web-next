@@ -1,0 +1,12 @@
+dist/
+build/
+htdocs/
+temp/
+**/out/
+**/.next/
+/next-env.d.ts
+node_modules/
+package.json
+package-lock.json
+*.html
+*.md
